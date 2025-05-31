@@ -1,3 +1,4 @@
+![Ekran görüntüsü 2025-05-31 064304](https://github.com/user-attachments/assets/0a81770c-85db-4af7-a44c-2e48f3e7edc3)
  Yemek Sipariş Uygulaması
 
 Bu proje, Android Studio kullanılarak geliştirilen bir **Yemek Sipariş Uygulamasıdır**. Kullanıcılar yemekleri görüntüleyebilir, detaylarını inceleyebilir, sepete ekleyebilir, filtreleme yapabilir ve toplam tutarı görebilirler.
