@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.view.HomeFragment"
+        android:label="Anasayfa">
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string"
+            android:defaultValue="kasim_adalan" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.view.DetailFragment"
+        android:label="Detay">
+        <argument
+            android:name="yemek"
+            app:argType="com.example.yemeksiparisuygulamasi.data.model.Yemek" />
+        <action
+            android:id="@+id/action_detail_to_cart"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.view.CartFragment"
+        android:label="Sepet" />
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.view.FavoriteFragment"
+        android:label="Favoriler" />
+
+</navigation>

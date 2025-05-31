@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgSepetYemek"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSepetYemekAdi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Yemek Adı"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/imgSepetYemek"
+            app:layout_constraintTop_toTopOf="@id/imgSepetYemek" />
+
+        <TextView
+            android:id="@+id/txtSepetAdet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Adet: 2"
+            app:layout_constraintEnd_toEndOf="@id/txtSepetYemekAdi"
+            app:layout_constraintStart_toStartOf="@id/txtSepetYemekAdi"
+            app:layout_constraintTop_toBottomOf="@id/txtSepetYemekAdi" />
+
+        <TextView
+            android:id="@+id/txtSepetFiyat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 60 ₺"
+            app:layout_constraintEnd_toEndOf="@id/txtSepetYemekAdi"
+            app:layout_constraintStart_toStartOf="@id/txtSepetYemekAdi"
+            app:layout_constraintTop_toBottomOf="@id/txtSepetAdet" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
